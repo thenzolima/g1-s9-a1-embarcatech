@@ -1,1 +1,1 @@
-# Programa conversor de Unidades em linguagem C
+# Programa conversor de Unidades em linguagem C.
