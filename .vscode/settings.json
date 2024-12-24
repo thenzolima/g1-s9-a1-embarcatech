@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "temperatura.h": "c",
+        "potencia.h": "c"
+    }
+}
