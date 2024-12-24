@@ -1,9 +1,9 @@
 # Variáveis
 CC = gcc
-CFLAGS = -Iinclude -Wall -Wextra
-SRC = src/main.c src/temperatura.c src/potencia.c
+CFLAGS = -Iinclude -Wall -Wextra -g3
+SRC = src/main.c src/temperatura.c src/potencia.c src/velocidade.c
 OBJ = $(SRC:.c=.o)
-TARGET = build/conversor
+TARGET = build/conversor.exe
 
 # Alvo principal
 all: build_dir $(TARGET)
@@ -19,4 +19,3 @@ build_dir:
 # Limpeza
 clean:
 	rm -rf build
-
