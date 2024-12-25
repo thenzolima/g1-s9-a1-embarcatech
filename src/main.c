@@ -2,6 +2,7 @@
 #include "temperatura.h"
 #include "potencia.h"
 #include "velocidade.h"
+#include "area.h"
 
 int main() {
     int opcao;
@@ -11,7 +12,8 @@ int main() {
         printf("1. Conversor de Temperatura\n");
         printf("2. Conversor de Potencia\n");
         printf("3. Conversor de Velocidade\n");
-        printf("4. Sair\n");
+        printf("4. Conversor de Área\n");
+        printf("5. Sair\n");
         printf("Digite a sua opcao: ");
         scanf("%d", &opcao);
 
@@ -26,6 +28,9 @@ int main() {
                 conversorVelocidade();
                 break;
             case 4:
+                conversorArea();
+                break;
+                            case 5:
                 printf("Encerrando o programa...\n");
                 break;
             default:
