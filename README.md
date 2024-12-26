@@ -42,9 +42,13 @@ g1-s9-a1-embarcatech/
 │   ├── main.c             # Arquivo principal com o menu
 │   ├── temperatura.c      # Implementação do conversor de temperatura
 │   ├── potencia.c         # Implementação do conversor de potência
+│   ├── velocidade.c       # Implementação do conversor de velocidade
+│   ├── area.c             # Implementação do conversor de área
 ├── include/               # Arquivos de cabeçalho
 │   ├── temperatura.h      # Cabeçalho do conversor de temperatura
 │   ├── potencia.h         # Cabeçalho do conversor de potência
+│   ├── velocidade.h       # Cabeçalho do conversor de velocidade
+│   ├── area.h             # Cabeçalho do conversor de área
 ├── build/                 # Binários gerados após compilação
 │   └── conversor          # Arquivo executável
 ├── Makefile               # Arquivo de automação da compilação (opcional)

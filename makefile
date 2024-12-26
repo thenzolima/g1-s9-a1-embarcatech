@@ -1,7 +1,7 @@
 # Variáveis
 CC = gcc
 CFLAGS = -Iinclude -Wall -Wextra -g3
-SRC = src/main.c src/temperatura.c src/potencia.c src/velocidade.c
+SRC = src/main.c src/temperatura.c src/potencia.c src/velocidade.c src/area.c
 OBJ = $(SRC:.c=.o)
 TARGET = build/conversor.exe
 
