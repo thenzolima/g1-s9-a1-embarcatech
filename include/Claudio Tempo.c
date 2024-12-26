@@ -8,17 +8,17 @@ Welcome to GDB Online.
 *******************************************************************************/
 #include <stdio.h>
 
-// Função: Segundos para Minutos
+// Função: Segundos p/ Minutos
 void segundosParaMinutos(int segundos) {
     printf("%d segundos = %.2f minutos\n", segundos, segundos / 60.0);
 }
 
-// Função: Minutos para Horas
+// Função: Minutos p/ Horas
 void minutosParaHoras(int minutos) {
     printf("%d minutos = %.2f horas\n", minutos, minutos / 60.0);
 }
 
-// Função: Horas para Segundos
+// Função: Horas p/ Segundos
 void horasParaSegundos(int horas) {
     printf("%d horas = %d segundos\n", horas, horas * 3600);
 }
