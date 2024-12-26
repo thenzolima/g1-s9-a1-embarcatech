@@ -3,6 +3,7 @@
 #include "potencia.h"
 #include "velocidade.h"
 #include "area.h"
+#include "comprimento.h"
 
 int main() {
     int opcao;
@@ -13,7 +14,8 @@ int main() {
         printf("2. Conversor de Potencia\n");
         printf("3. Conversor de Velocidade\n");
         printf("4. Conversor de Área\n");
-        printf("5. Sair\n");
+        printf("5. Converso de Comprimento\n");
+        printf("6. Sair\n");
         printf("Digite a sua opcao: ");
         scanf("%d", &opcao);
 
@@ -30,7 +32,10 @@ int main() {
             case 4:
                 conversorArea();
                 break;
-                            case 5:
+            case 5:
+                conversorComprimento();
+                break;
+            case 6:
                 printf("Encerrando o programa...\n");
                 break;
             default:
