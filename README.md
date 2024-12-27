@@ -1,3 +1,5 @@
+<img src="https://softex.br/wp-content/uploads/2024/09/EmbarcaTech_logo_Azul-1030x428.png" alt="embarcatech" width="240">
+
 # Programa conversor de Unidades em linguagem C
 
 ### Siga as etapas abaixo para compilar e executar o programa:
@@ -20,8 +22,7 @@
    ./conversor.exe
    ```
 
-### Estrutura do projeto
-
+### Árvore do repositório
 ```makefile
 .
 ├── conversor.exe          # Arquivo executável gerado após a compilação
