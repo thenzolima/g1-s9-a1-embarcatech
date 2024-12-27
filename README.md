@@ -2,7 +2,7 @@
 
 # Programa conversor de Unidades em linguagem C
 
-### Siga as etapas abaixo para compilar e executar o programa:
+### Siga as etapas abaixo para executar o programa:
 
 1. Clone este repositório:
    
