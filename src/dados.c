@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include "dados.h"
@@ -23,7 +22,7 @@ float converte_bytes(float valor, int tipo_dado_inicial, char *c_tipo_dado_inici
         return valor * 1024 * 1024 * 1024;
     case 6:
         strcpy(c_tipo_dado_inicial, "TB");
-        return valor * 1024 * 1024 * 1024 * 1024;
+        return valor * 1024LL * 1024 * 1024 * 1024; // Usando long long para evitar overflow
     default:
         strcpy(c_tipo_dado_inicial, "DESCONHECIDO");
         return -1; // Tipo inválido
@@ -49,7 +48,7 @@ float converte_dado(float v_converte_byte, int tipo_dado_final, char *c_tipo_dad
         return v_converte_byte / (1024 * 1024 * 1024);
     case 6:
         strcpy(c_tipo_dado_final, "TB");
-        return v_converte_byte / (1024 * 1024 * 1024 * 1024);
+        return v_converte_byte / (1024LL * 1024 * 1024 * 1024); // Usando long long para evitar overflow
     default:
         strcpy(c_tipo_dado_final, "DESCONHECIDO");
         return -1; // Tipo inválido
@@ -100,3 +99,4 @@ void conversorDados() {
 
     printf("\nO valor de %.2f %s equivale a %.2f %s.\n", valor, c_tipo_dado_inicial, v_convert_final, c_tipo_dado_final);
 }
+

@@ -1,15 +1,16 @@
 /*
-6. Watts (W), quilowatts (kW), cavalos-vapor (cv ou hp) 
+6. Watts (W), quilowatts (kW), cavalos-vapor (cv ou hp)
 */
 
 #include <stdio.h>
 #include "potencia.h"
 
-#define CV_W 735.49875  
-#define W_KW 1000.0     
-#define HP_W 745.7     
+#define CV_W 735.49875
+#define W_KW 1000.0
+#define HP_W 745.7
 
-void converterWatts() {
+void converterWatts()
+{
     double watts, resultado;
     int selecao;
 
@@ -22,26 +23,28 @@ void converterWatts() {
     printf("Digite o valor em Watts: ");
     scanf("%lf", &watts);
 
-    switch (selecao) {
-        case 1:
-            resultado = watts / W_KW;
-            printf("%.2lf Watts = %.2lf kW\n", watts, resultado);
-            break;
-        case 2:
-            resultado = watts / CV_W;
-            printf("%.2lf Watts = %.2lf cv\n", watts, resultado);
-            break;
-        case 3:
-            resultado = watts / HP_W;
-            printf("%.2lf Watts = %.2lf hp\n", watts, resultado);
-            break;
-        default:
-            printf("Comando Invalido!\n");
-            break;
+    switch (selecao)
+    {
+    case 1:
+        resultado = watts / W_KW;
+        printf("%.2lf Watts = %.2lf kW\n", watts, resultado);
+        break;
+    case 2:
+        resultado = watts / CV_W;
+        printf("%.2lf Watts = %.2lf cv\n", watts, resultado);
+        break;
+    case 3:
+        resultado = watts / HP_W;
+        printf("%.2lf Watts = %.2lf hp\n", watts, resultado);
+        break;
+    default:
+        printf("Comando Invalido!\n");
+        break;
     }
 }
 
-void converterOutros() {
+void converterOutros()
+{
     double valor, resultado;
     int selecao;
 
@@ -54,29 +57,32 @@ void converterOutros() {
     printf("Digite o valor: ");
     scanf("%lf", &valor);
 
-    switch (selecao) {
-        case 1:
-            resultado = valor * W_KW;
-            printf("%.2lf kW = %.2lf Watts\n", valor, resultado);
-            break;
-        case 2:
-            resultado = valor * CV_W;
-            printf("%.2lf cv = %.2lf Watts\n", valor, resultado);
-            break;
-        case 3:
-            resultado = valor * HP_W;
-            printf("%.2lf hp = %.2lf Watts\n", valor, resultado);
-            break;
-        default:
-            printf("Comando Invalido!\n");
-            break;
+    switch (selecao)
+    {
+    case 1:
+        resultado = valor * W_KW;
+        printf("%.2lf kW = %.2lf Watts\n", valor, resultado);
+        break;
+    case 2:
+        resultado = valor * CV_W;
+        printf("%.2lf cv = %.2lf Watts\n", valor, resultado);
+        break;
+    case 3:
+        resultado = valor * HP_W;
+        printf("%.2lf hp = %.2lf Watts\n", valor, resultado);
+        break;
+    default:
+        printf("Comando Invalido!\n");
+        break;
     }
 }
 
-void conversorPotencia() {
+void conversorPotencia()
+{
     int selecao;
 
-    do {
+    do
+    {
         printf("\nConversor de Potencia\n");
         printf("1. Converter de Watts\n");
         printf("2. Converter para Watts\n");
@@ -84,19 +90,20 @@ void conversorPotencia() {
         printf("Selecione: ");
         scanf("%d", &selecao);
 
-        switch (selecao) {
-            case 1:
-                converterWatts();
-                break;
-            case 2:
-                converterOutros();
-                break;
-            case 3:
-                printf("Voltando ao menu principal...\n");
-                break;
-            default:
-                printf("Comando Invalido!\n");
-                break;
+        switch (selecao)
+        {
+        case 1:
+            converterWatts();
+            break;
+        case 2:
+            converterOutros();
+            break;
+        case 3:
+            printf("Voltando ao menu principal...\n");
+            break;
+        default:
+            printf("Comando Invalido!\n");
+            break;
         }
     } while (selecao != 3);
 }

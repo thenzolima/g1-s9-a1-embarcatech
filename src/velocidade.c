@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "velocidade.h"
 
-void conversorVelocidade() {
+void conversorVelocidade()
+{
     int op;
     double valor, resultado;
 
@@ -15,45 +16,46 @@ void conversorVelocidade() {
     printf("Digite a sua opcao: ");
     scanf("%d", &op);
 
-    switch (op) {
-        case 1:
-            printf("\nDigite o valor em km/h: ");
-            scanf("%lf", &valor);
-            resultado = valor / 3.6;
-            printf("\nO valor em m/s é: %.2f\n", resultado);
-            break;
-        case 2:
-            printf("\nDigite o valor em m/s: ");
-            scanf("%lf", &valor);
-            resultado = valor * 3.6;
-            printf("\nO valor em km/h é: %.2f\n", resultado);
-            break;
-        case 3:
-            printf("\nDigite o valor em km/h: ");
-            scanf("%lf", &valor);
-            resultado = valor / 1.609;
-            printf("\nO valor em mph é: %.2f\n", resultado);
-            break;
-        case 4:
-            printf("\nDigite o valor em mph: ");
-            scanf("%lf", &valor);
-            resultado = valor * 1.609;
-            printf("\nO valor em km/h é: %.2f\n", resultado);
-            break;
-        case 5:
-            printf("\nDigite o valor em m/s: ");
-            scanf("%lf", &valor);
-            resultado = valor * 2.237;
-            printf("\nO valor em mph é: %.2f\n", resultado);
-            break;
-        case 6:
-            printf("\nDigite o valor em mph: ");
-            scanf("%lf", &valor);
-            resultado = valor / 2.237;
-            printf("\nO valor em m/s é: %.2f\n", resultado);
-            break;
-        default:
-            printf("\nOpcao invalida!\n");
-            break;
+    switch (op)
+    {
+    case 1:
+        printf("\nDigite o valor em km/h: ");
+        scanf("%lf", &valor);
+        resultado = valor / 3.6;
+        printf("\nO valor em m/s é: %.2f\n", resultado);
+        break;
+    case 2:
+        printf("\nDigite o valor em m/s: ");
+        scanf("%lf", &valor);
+        resultado = valor * 3.6;
+        printf("\nO valor em km/h é: %.2f\n", resultado);
+        break;
+    case 3:
+        printf("\nDigite o valor em km/h: ");
+        scanf("%lf", &valor);
+        resultado = valor / 1.609;
+        printf("\nO valor em mph é: %.2f\n", resultado);
+        break;
+    case 4:
+        printf("\nDigite o valor em mph: ");
+        scanf("%lf", &valor);
+        resultado = valor * 1.609;
+        printf("\nO valor em km/h é: %.2f\n", resultado);
+        break;
+    case 5:
+        printf("\nDigite o valor em m/s: ");
+        scanf("%lf", &valor);
+        resultado = valor * 2.237;
+        printf("\nO valor em mph é: %.2f\n", resultado);
+        break;
+    case 6:
+        printf("\nDigite o valor em mph: ");
+        scanf("%lf", &valor);
+        resultado = valor / 2.237;
+        printf("\nO valor em m/s é: %.2f\n", resultado);
+        break;
+    default:
+        printf("\nOpcao invalida!\n");
+        break;
     }
 }

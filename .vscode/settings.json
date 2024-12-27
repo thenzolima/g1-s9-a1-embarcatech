@@ -1,7 +1,6 @@
 {
     "files.associations": {
-        "temperatura.h": "c",
-        "potencia.h": "c"
+        "stdio.h": "c"
     },
     "makefile.configureOnOpen": true
 }

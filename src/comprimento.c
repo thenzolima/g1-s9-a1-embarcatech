@@ -32,7 +32,7 @@ void converterDeMetros() {
     }
 }
 
-void converterOutros() {
+void converteOutros() {
     double valor, resultado;
     int selecao;
 
@@ -80,7 +80,7 @@ void conversorComprimento() {
                 converterDeMetros();
                 break;
             case 2:
-                converterOutros();
+                converteOutros();
                 break;
             case 3:
                 printf("Voltando ao menu principal...\n");

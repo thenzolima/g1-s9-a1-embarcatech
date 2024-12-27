@@ -1,8 +1,6 @@
 # Programa conversor de Unidades em linguagem C
 
-### Como executar o programa
-
-Siga as etapas abaixo para compilar e executar o programa:
+### Siga as etapas abaixo para compilar e executar o programa:
 
 1. Clone este repositório:
    
@@ -16,41 +14,36 @@ Siga as etapas abaixo para compilar e executar o programa:
    cd [nome do repositório clonado]
    ```
 
-3. Compile o programa utilizando o `Makefile`:
+3. Execute o programa:
    
    ```bash
-   make
-   ```
-
-4. Navegue até o diretório `build`:
-   
-   ```bash
-   cd build
-   ```
-
-5. Execute o programa:
-   
-   ```bash
-   ./conversor
+   ./conversor.exe
    ```
 
 ### Estrutura do projeto
 
 ```makefile
-g1-s9-a1-embarcatech/
-├── src/                   # Código fonte
-│   ├── main.c             # Arquivo principal com o menu
-│   ├── temperatura.c      # Implementação do conversor de temperatura
-│   ├── potencia.c         # Implementação do conversor de potência
-│   ├── velocidade.c       # Implementação do conversor de velocidade
-│   ├── area.c             # Implementação do conversor de área
-├── include/               # Arquivos de cabeçalho
-│   ├── temperatura.h      # Cabeçalho do conversor de temperatura
-│   ├── potencia.h         # Cabeçalho do conversor de potência
-│   ├── velocidade.h       # Cabeçalho do conversor de velocidade
-│   ├── area.h             # Cabeçalho do conversor de área
-├── build/                 # Binários gerados após compilação
-│   └── conversor          # Arquivo executável
-├── Makefile               # Arquivo de automação da compilação (opcional)
-└── README.md              # Documentação do projeto
+.
+├── conversor.exe          # Arquivo executável gerado após a compilação
+├── include/               # Diretório de arquivos de cabeçalho
+│   ├── area.h             # Cabeçalho para o conversor de área
+│   ├── comprimento.h      # Cabeçalho para o conversor de comprimento
+│   ├── dados.h            # Cabeçalho para o conversor de dados
+│   ├── massa.h            # Cabeçalho para o conversor de massa
+│   ├── potencia.h         # Cabeçalho para o conversor de potência
+│   ├── temperatura.h      # Cabeçalho para o conversor de temperatura
+│   ├── tempo.h            # Cabeçalho para o conversor de tempo
+│   └── velocidade.h       # Cabeçalho para o conversor de velocidade
+├── makefile               # Arquivo de automação para compilação do projeto
+├── README.md              # Documentação do projeto
+└── src/                   # Diretório com o código-fonte
+    ├── area.c             # Implementação do conversor de área
+    ├── comprimento.c      # Implementação do conversor de comprimento
+    ├── dados.c            # Implementação do conversor de dados
+    ├── main.c             # Arquivo principal com o menu e lógica principal
+    ├── massa.c            # Implementação do conversor de massa
+    ├── potencia.c         # Implementação do conversor de potência
+    ├── temperatura.c      # Implementação do conversor de temperatura
+    ├── tempo.c            # Implementação do conversor de tempo
+    └── velocidade.c       # Implementação do conversor de velocidade 
 ```
