@@ -2,6 +2,8 @@
 
 # Programa conversor de Unidades em linguagem C
 
+Feito por: Subgrupo 9 do Grupo 1
+
 ### Siga as etapas abaixo para executar o programa:
 
 1. Clone este repositório:
